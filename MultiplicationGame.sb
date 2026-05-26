@@ -1,0 +1,17 @@
+Continue = "Y"
+while Continue = "Y" Or Continue = "y"
+  X=Math.GetRandomNumber(99)
+  Y=Math.GetRandomNumber(99)
+  TextWindow.WriteLine("first number: " +X)
+  TextWindow.WriteLine("second number: " +Y)
+  correctAnswer=X*Y
+  TextWindow.WriteLine(X + "*" + Y + "=? "+ "write the answer: ")
+  answer=TextWindow.Read()
+  If answer=correctAnswer Then
+    TextWindow.WriteLine("Greatt job!!! you guessed right!!!")
+  Else
+    TextWindow.WriteLine("sowwy you guessed wrong" + "answer was " + correctAnswer)
+  EndIf
+  TextWindow.WriteLine("wanna continue? " + "Y / N")
+  Continue = TextWindow.Read() 
+ EndWhile
